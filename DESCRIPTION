@@ -1,0 +1,16 @@
+Package: dotpipeR
+Type: Package
+Title: Generator of graph-based pipelines from R code
+Version: 0.00.1
+Date: 2022-02-04
+Authors@R: c(person("Chris", "Durden", role = c("aut", "cre"), email = "cdurden@gmail.com"))
+Author: Chris Durden
+Maintainer: Chris Durden <cdurden@gmail.com>
+Description: dotpipeR generates pipeline representations of R scripts
+License: GPL-2
+Imports: digest, purrr
+Suggests:
+    testthat (>= 3.0.0),
+    Rgraphviz,
+    mockery
+Config/testthat/edition: 3

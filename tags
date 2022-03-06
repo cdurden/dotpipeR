@@ -1,0 +1,190 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+USE.NAMES	tests/testthat/test-pipe.R	/^  expect_equal(names(p$edges), vapply(p$edges, function(edge) paste(edge[[1]],edge[[2]],sep="~")/;"	v	function:anonFunca922ed220103
+`%then%`	R/callGraph.R	/^`%then%` <- function(x, y) {$/;"	f
+a	tests/testthat/test-pipe.R	/^exprs <- c(quote(a <- f()), quote(b <- a*2))$/;"	g
+addEdges	R/callGraph.R	/^addEdges <- function(oldEdges, newEdges) {$/;"	f
+addRepipeParentHandlerOnPipelineVertex	R/callGraph.R	/^addRepipeParentHandlerOnPipelineVertex <- function(vertex, x = vertex$value) {$/;"	f
+addUpdatePipelineVertexHandler	R/callGraph.R	/^addUpdatePipelineVertexHandler <- function(vertex) {$/;"	f
+after	R/callGraph.R	/^after <- function(x, y) y$/;"	f
+anonFunc2ba87b740104	R/callGraph.R	/^    inputDigests <- lapply(inputVertexList, function(vertex) vertex$digest)$/;"	v	function:digestVertex
+anonFunc2ba87b740204	R/callGraph.R	/^    debug_message(paste("buildCallGraph received arguments:", paste(lapply(names(formals()), fun/;"	v	function:buildCallGraph
+anonFunc2ba87b740304	R/callGraph.R	/^      inputNames <- Filter(function(name) identical(callGraph$vertices[[name]]$value, get(name, /;"	v	function:buildCallGraph
+anonFunc2ba87b740404	R/callGraph.R	/^              inputVertexList <- lapply(inputNames, function(inputVertexName) callGraph$vertices/;"	v	function:buildCallGraph
+anonFunc2ba87b740504	R/callGraph.R	/^              newEdges <- lapply(inputNames, function(inputVertexName) list(inputVertexName, nam/;"	v	function:buildCallGraph
+anonFunc2ba87b740604	R/callGraph.R	/^      callGraph <- Reduce(function(g, y) buildCallGraph(y, g, envir=envir, recalculate=recalcula/;"	v	function:buildCallGraph
+anonFunc2ba87b740704	R/callGraph.R	/^    g$vertices <- lapply(g$vertices, function(vertex) exportVertexData(vertex, prefix=prefix))$/;"	v	function:exportGraph
+anonFunc2ba87b740804	R/callGraph.R	/^            urls <- lapply(x, function(item) {$/;"	v	functionVar:exportVertexData.exportData
+anonFunc2ba87b740904	R/callGraph.R	/^    metadata <- vertex$value %>% (function(x) exportData(x, file.path(prefix,digest(x))))$/;"	v	function:exportVertexData
+anonFunc2ba87b740a04	R/callGraph.R	/^        lapply(x, function(item) clearPipelineVertexEventHandlers(vertex, item))$/;"	v	function:clearPipelineVertexEventHandlers
+anonFunc2ba87b740b04	R/callGraph.R	/^        addEventHandler(x$id, "pipelineProcessed", function(event) {$/;"	v	function:addUpdatePipelineVertexHandler
+anonFunc2ba87b740c04	R/callGraph.R	/^        lapply(x, function(item) {$/;"	v	function:addUpdatePipelineVertexHandler
+anonFunc2ba87b740d04	R/callGraph.R	/^                addEventHandler(item$id, "pipelineProcessed", function(event) {$/;"	v	functionVar:addUpdatePipelineVertexHandler.anonFunc2ba87b740c04
+anonFunc2ba87b740e04	R/callGraph.R	/^                    i <- which(sapply(vertex$graph$vertices[[vertex$name_]]$value, function(y) i/;"	v	functionVar:addUpdatePipelineVertexHandler.anonFunc2ba87b740c04.anonFunc2ba87b740d04
+anonFunc2ba87b740f04	R/callGraph.R	/^        addEventHandler(x$id, "pipelineProcessed", function(event) {$/;"	v	function:addRepipeParentHandlerOnPipelineVertex
+anonFunc2ba87b741004	R/callGraph.R	/^        lapply(x, function(item) addRepipeParentHandlerOnPipelineVertex(vertex, item))$/;"	v	function:addRepipeParentHandlerOnPipelineVertex
+anonFunc2ba87b741104	R/callGraph.R	/^    lapply(names(params), function(paramName) assign(paramName, params[[paramName]], envir=envir/;"	v	function:pipeExprs
+anonFunc2ba87b741204	R/callGraph.R	/^    argNames <- Filter(function(name) !(name %in% c("...")),$/;"	v	function:pipeExprs
+anonFunc2ba87b741304	R/callGraph.R	/^    lapply(argNames, function(name) {$/;"	v	function:pipeExprs
+anonFunc2ba87b741404	R/callGraph.R	/^    lapply(extraArgNames, function(name) {$/;"	v	function:pipeExprs
+anonFunc2ba87b741504	R/callGraph.R	/^    callGraph <- Reduce(function(g, y) {$/;"	v	function:pipeExprs
+anonFunc2ba87b741604	R/callGraph.R	/^    Reduce(function(result, name) {$/;"	v	function:mergeLists
+anonFunc2ba87b741704	R/callGraph.R	/^    g <- tryCatch(do.call(f, args), error = function(e) show(e))$/;"	v	function:repipe
+anonFunc2ba87b741804	R/callGraph.R	/^    nAttrs <- Reduce(function(nAttrs, attr) { nAttrs[[attr]] <- lapply(Filter(function(v) !is.nu/;"	v	function:write.dot
+anonFunc2ba87b741904	R/callGraph.R	/^    nAttrs <- Reduce(function(nAttrs, attr) { nAttrs[[attr]] <- lapply(Filter(function(v) !is.nu/;"	v	functionVar:write.dot.anonFunc2ba87b741804
+anonFunc2ba87b741a04	R/callGraph.R	/^    nAttrs <- Reduce(function(nAttrs, attr) { nAttrs[[attr]] <- lapply(Filter(function(v) !is.nu/;"	v	functionVar:write.dot.anonFunc2ba87b741804
+anonFunc2ba87b741b04	R/callGraph.R	/^    h$edges <- Filter(function(edge) edge[[1]] %in% names(h$vertices) && edge[[2]] %in% names(h$/;"	v	function:restrict
+anonFunc2ba87b741c04	R/callGraph.R	/^    inputEdges <- Filter(function(edge) edge[[2]] == vertexName, callGraph$edges)$/;"	v	function:getInputs
+anonFunc2ba87b741d04	R/callGraph.R	/^    inputNames <- lapply(inputEdges, function(edge) edge[[1]])$/;"	v	function:getInputs
+anonFunc2ba87b741e04	R/callGraph.R	/^    inputs <- lapply(inputNames, function(name) callGraph$vertices[[name]])$/;"	v	function:getInputs
+anonFunc2ba87b741f04	R/callGraph.R	/^    names(edges) <- unlist(lapply(edges, function(edge) paste(edge[[1]],edge[[2]],sep="~")))$/;"	v	function:addEdges
+anonFunc2ba87b742004	R/callGraph.R	/^    singletonNames <- Filter(function(vertexName) !(vertexName %in% unlist(g$edges)), names(g$ve/;"	v	function:maximalVertices
+anonFunc2ba87b742104	R/callGraph.R	/^    predecessorNames <- sapply(g$edges, function(edge) edge[[1]])$/;"	v	function:maximalVertices
+anonFunc2ba87b742204	R/callGraph.R	/^    maximalNames <- unique(append(singletonNames, unlist(Filter(function(vertexName) !(vertexNam/;"	v	function:maximalVertices
+anonFunc2ba87b742304	R/callGraph.R	/^    maximalNames <- unique(append(singletonNames, unlist(Filter(function(vertexName) !(vertexNam/;"	v	functionVar:maximalVertices.anonFunc2ba87b742204
+anonFunc2ba87b742404	R/callGraph.R	/^    singletonNames <- Filter(function(vertexName) !(vertexName %in% unlist(g$edges)), names(g$ve/;"	v	function:minimalVertices
+anonFunc2ba87b742504	R/callGraph.R	/^    predecessorNames <- sapply(g$edges, function(edge) edge[[1]])$/;"	v	function:minimalVertices
+anonFunc2ba87b742604	R/callGraph.R	/^    minimalNames <- unique(append(singletonNames, unlist(Filter(function(vertexName) !(vertexNam/;"	v	function:minimalVertices
+anonFunc2ba87b742704	R/callGraph.R	/^    minimalNames <- unique(append(singletonNames, unlist(Filter(function(vertexName) !(vertexNam/;"	v	functionVar:minimalVertices.anonFunc2ba87b742604
+anonFunc2ba87b742804	R/callGraph.R	/^            below <- Filter(function(vertex) vertex %in% findNames(h), names(g$vertices))$/;"	v	function:embed
+anonFunc2ba87b742904	R/callGraph.R	/^            above <- names(g$vertices[unlist(lapply(Filter(function(edge) edge[[1]] %in% below, /;"	v	function:embed
+anonFunc2ba87b742a04	R/callGraph.R	/^            above <- names(g$vertices[unlist(lapply(Filter(function(edge) edge[[1]] %in% below, /;"	v	function:embed
+anonFunc2ba87b742b04	R/callGraph.R	/^        g <- Reduce(function(g, x) embed(g, x, below=below, above=above), h, g)$/;"	v	function:embed
+anonFunc2ba87b742c04	R/callGraph.R	/^        vertices <- lapply(h$vertices, function(vertex) {$/;"	v	function:embed
+anonFunca922ed220103	tests/testthat/test-pipe.R	/^  expect_equal(names(p$edges), vapply(p$edges, function(edge) paste(edge[[1]],edge[[2]],sep="~")/;"	f
+anonFunca922ed220203	tests/testthat/test-pipe.R	/^  expect_true(all(lapply(q$vertices, function(vertex) { vertex$cache == vertex$value })))$/;"	f
+argNames	R/callGraph.R	/^    argNames <- Filter(function(name) !(name %in% c("...")),$/;"	v	function:pipeExprs
+args	R/callGraph.R	/^    args <- mergeLists(priorCallGraph$args, list(...))$/;"	v	function:repipe
+as.graph	R/callGraph.R	/^as.graph <- function(callGraph) {$/;"	f
+assignments	R/callGraph.R	/^      assignments <- findAssignments(x)$/;"	v	function:buildCallGraph
+availableNames	R/callGraph.R	/^      availableNames <- Filter(existsInEvalEnvironment, names)$/;"	v	function:buildCallGraph
+b	tests/testthat/test-pipe.R	/^exprs <- c(quote(a <- f()), quote(b <- a*2))$/;"	g
+buildCallGraph	R/callGraph.R	/^buildCallGraph <- function(x, callGraph, envir=new.env(), processors=list(), priorCallGraph=NULL/;"	f
+buildProcessors	R/callGraph.R	/^buildProcessors <- function(prePipe=list(), postPipe=list(), preEval=list(), postEval=list(), ex/;"	f
+cacheFile	R/callGraph.R	/^    cacheFile <- file.path(vertex$graph$dir,"cache",vertex$digest)$/;"	v	function:loadVertexFromCache
+cachedValues	tests/testthat/test-pipe.R	/^  cachedValues <- lapply(p$vertices, `$`, "cache")$/;"	g
+callGraph	R/callGraph.R	/^    callGraph <- Reduce(function(g, y) {$/;"	v	function:pipeExprs
+cartesianProduct	R/callGraph.R	/^cartesianProduct <- function(x,y) {$/;"	f
+catEnvironmentChain	R/callGraph.R	/^catEnvironmentChain <- function(envir) {$/;"	f
+checkpoint	R/callGraph.R	/^checkpoint <- function(x) {$/;"	f
+clearCache	R/callGraph.R	/^clearCache <- function(g, ...) {$/;"	f
+clearCachedValue	R/callGraph.R	/^clearCachedValue <- function(file) {$/;"	f
+clearPipelineEventHandlers	R/callGraph.R	/^clearPipelineEventHandlers <- function(g) {$/;"	f
+clearPipelineVertexEventHandlers	R/callGraph.R	/^clearPipelineVertexEventHandlers <- function(vertex, x = vertex$value) {$/;"	f
+debug_message	R/callGraph.R	/^debug_message <- function(...) {$/;"	f
+defaultAttrs	R/callGraph.R	/^    defaultAttrs <- list(node=list(href="#",cacheKey="",style="filled",fillcolor="transparent"))$/;"	v	function:write.dot
+defaultEval	R/callGraph.R	/^defaultEval <- function() {$/;"	f
+defaultPipe	R/callGraph.R	/^defaultPipe <- function() {$/;"	f
+defaultProcessors	R/callGraph.R	/^defaultProcessors <- function(reactive=exists("triggerEvent")) {$/;"	f
+digestVertex	R/callGraph.R	/^digestVertex <- function(vertex, inputVertexList) {$/;"	f
+dir	R/callGraph.R	/^    dir <- dirname(file)$/;"	v	function:getUrl
+edge	R/callGraph.R	/^    for (edge in callGraph$edges) {$/;"	v	function:as.graph
+edges	R/callGraph.R	/^    edges <- append(oldEdges, newEdges)$/;"	v	function:addEdges
+embed	R/callGraph.R	/^embed <- function(g, h, below, above, prefix=paste0(h$id,"::")) {$/;"	f
+envir	R/callGraph.R	/^    envir <- new.env(parent=parent.env)$/;"	v	function:pipeExprs
+envir	tests/testthat/test-pipe.R	/^envir <- new.env()$/;"	g
+existsInEvalEnvironment	R/callGraph.R	/^      existsInEvalEnvironment <- function(x) {$/;"	v	function:buildCallGraph
+exportData	R/callGraph.R	/^    exportData <- function(x, reprFile) {$/;"	v	function:exportVertexData
+exportGraph	R/callGraph.R	/^exportGraph <- function(g, prefix=g$dir) {$/;"	f
+exportVertexData	R/callGraph.R	/^exportVertexData <- function(vertex, prefix=tempdir()) {$/;"	f
+exprs	R/callGraph.R	/^    exprs <- parse(file);$/;"	v	function:pipe
+exprs	tests/testthat/test-pipe.R	/^exprs <- c(quote(a <- f()), quote(b <- a*2))$/;"	g
+extraArgNames	R/callGraph.R	/^    extraArgNames <- names(list(...))$/;"	v	function:pipeExprs
+f	R/callGraph.R	/^              for (f in processors$eval$pre) {$/;"	v	function:buildCallGraph
+f	R/callGraph.R	/^    f <- partial(pipeExprs, ... = , priorCallGraph=priorCallGraph) # envir is now parent. I thin/;"	v	function:repipe
+f	R/callGraph.R	/^    for (f in processors$pipe$pre) {$/;"	v	function:pipeExprs
+f	R/callGraph.R	/^f <- function(a=1,b=2,c=3,...) {$/;"	f
+f	tests/testthat/test-pipe.R	/^f <- function() {$/;"	f
+findAssignments	R/callGraph.R	/^findAssignments <- function(x) {$/;"	f
+findNames	R/callGraph.R	/^findNames <- function(x) {$/;"	f
+findNonArgumentNames	R/callGraph.R	/^findNonArgumentNames <- function(x, exclude=list()) {$/;"	f
+findNonArgumentNonAssignmentNames	R/callGraph.R	/^findNonArgumentNonAssignmentNames <- function(x, exclude=list()) {$/;"	f
+g	R/callGraph.R	/^    g <- new("graphNEL", nodes=names(callGraph$vertices), edgemode="directed")$/;"	v	function:as.graph
+g	R/callGraph.R	/^    g <- pipeExprs(exprs, ...)$/;"	v	function:pipe
+g	R/callGraph.R	/^    g <- tryCatch(do.call(f, args), error = function(e) show(e))$/;"	v	function:repipe
+g	R/callGraph.R	/^    g = list2env(list(vertices=list(), edges=list()))$/;"	v	function:pipeExprs
+getInputs	R/callGraph.R	/^getInputs <- function(vertexName, callGraph) {$/;"	f
+getParent	R/callGraph.R	/^getParent <- function(g) {$/;"	f
+getUrl	R/callGraph.R	/^getUrl <- function(file, base_dir=tempdir(), base_url=".\/Rtmp") {$/;"	f
+h	R/callGraph.R	/^    h <- rlang::env_clone(g)$/;"	v	function:restrict
+href	R/callGraph.R	/^            href <- paste0("?file=",getUrl(reprFile),"&module=.\/dropbox.js&dropboxId=",x$id,"&r/;"	v	functionVar:exportVertexData.exportData
+i	R/callGraph.R	/^                    i <- which(sapply(vertex$graph$vertices[[vertex$name_]]$value, function(y) i/;"	v	functionVar:addUpdatePipelineVertexHandler.anonFunc2ba87b740c04.anonFunc2ba87b740d04
+id	tests/testthat/test-pipe.R	/^  id <- "test-setId"$/;"	g
+inheritParentProcessors	R/callGraph.R	/^inheritParentProcessors <- function(g, name="self") {$/;"	f
+init	R/callGraph.R	/^    }, exprs, init=g)$/;"	v	functionVar:pipeExprs.anonFunc2ba87b741504
+inputDigests	R/callGraph.R	/^    inputDigests <- lapply(inputVertexList, function(vertex) vertex$digest)$/;"	v	function:digestVertex
+inputEdges	R/callGraph.R	/^    inputEdges <- Filter(function(edge) edge[[2]] == vertexName, callGraph$edges)$/;"	v	function:getInputs
+inputNames	R/callGraph.R	/^      inputNames <- Filter(function(name) identical(callGraph$vertices[[name]]$value, get(name, /;"	v	function:buildCallGraph
+inputNames	R/callGraph.R	/^    inputNames <- lapply(inputEdges, function(edge) edge[[1]])$/;"	v	function:getInputs
+inputVertexList	R/callGraph.R	/^                    inputVertexList <- getInputs(vertex$name_, vertex$graph)$/;"	v	functionVar:addUpdatePipelineVertexHandler.anonFunc2ba87b740c04.anonFunc2ba87b740d04
+inputVertexList	R/callGraph.R	/^              inputVertexList <- lapply(inputNames, function(inputVertexName) callGraph$vertices/;"	v	function:buildCallGraph
+inputs	R/callGraph.R	/^    inputs <- lapply(inputNames, function(name) callGraph$vertices[[name]])$/;"	v	function:getInputs
+is.callGraph	R/callGraph.R	/^is.callGraph <- function(x) {$/;"	f
+is.checkpoint	R/callGraph.R	/^is.checkpoint <- function(x) {$/;"	f
+loadData	R/callGraph.R	/^loadData <- function(file) {$/;"	f
+loadVertexFromCache	R/callGraph.R	/^loadVertexFromCache <- function(vertex) {$/;"	f
+m	tests/testthat/test-pipe.R	/^  m <- mock(1)$/;"	g
+maximalNames	R/callGraph.R	/^    maximalNames <- unique(append(singletonNames, unlist(Filter(function(vertexName) !(vertexNam/;"	v	function:maximalVertices
+maximalVertices	R/callGraph.R	/^maximalVertices <- function(g) {$/;"	f
+mergeLists	R/callGraph.R	/^mergeLists <- function(a, b, joiner=c, mergeNonLists=FALSE) {$/;"	f
+metadata	R/callGraph.R	/^                metadata <- exportData(item, reprFile)$/;"	v	functionVar:exportVertexData.exportData.anonFunc2ba87b740804
+metadata	R/callGraph.R	/^        metadata <- list()$/;"	v	functionVar:exportVertexData.exportData
+metadata	R/callGraph.R	/^    metadata <- vertex$value %>% (function(x) exportData(x, file.path(prefix,digest(x))))$/;"	v	function:exportVertexData
+minimalNames	R/callGraph.R	/^    minimalNames <- unique(append(singletonNames, unlist(Filter(function(vertexName) !(vertexNam/;"	v	function:minimalVertices
+minimalVertices	R/callGraph.R	/^minimalVertices <- function(g) {$/;"	f
+msg	tests/testthat/test-pipe.R	/^  msg <- "pipe preprocessor ran"$/;"	g
+nAttrs	R/callGraph.R	/^    nAttrs <- Reduce(function(nAttrs, attr) { nAttrs[[attr]] <- lapply(Filter(function(v) !is.nu/;"	v	function:write.dot
+name	R/callGraph.R	/^      name <- NULL$/;"	v	function:buildCallGraph
+names	R/callGraph.R	/^      names <- findNonArgumentNames(x) # These are names that are not the names of formal argume/;"	v	function:buildCallGraph
+newEdges	R/callGraph.R	/^              newEdges <- lapply(inputNames, function(inputVertexName) list(inputVertexName, nam/;"	v	function:buildCallGraph
+newValue	R/callGraph.R	/^                    newValue <- pipelineDb[[item$id]]$/;"	v	functionVar:addUpdatePipelineVertexHandler.anonFunc2ba87b740c04.anonFunc2ba87b740d04
+newValue	R/callGraph.R	/^            newValue <- pipelineDb[[x$id]]$/;"	v	functionVar:addUpdatePipelineVertexHandler.anonFunc2ba87b740b04
+newVertices	R/callGraph.R	/^        newVertices <- rename(vertices, paste0(prefix, names(vertices)))$/;"	v	function:embed
+outputNames	R/callGraph.R	/^      outputNames <- Filter(existsInEvalEnvironment, assignments)$/;"	v	function:buildCallGraph
+p	tests/testthat/test-pipe.R	/^p <- pipeExprs(exprs, parent=envir)$/;"	g
+parentPipeline	R/callGraph.R	/^    parentPipeline <- parent.env(parent.frame())[[name]]$/;"	v	function:inheritParentProcessors
+partialBuildCallGraph	R/callGraph.R	/^        partialBuildCallGraph <- partial(buildCallGraph, y, g, envir)$/;"	v	functionVar:pipeExprs.anonFunc2ba87b741504
+path	R/callGraph.R	/^    path <- basename(file)$/;"	v	function:getUrl
+pipe	R/callGraph.R	/^pipe <- function(file, ...) {$/;"	f
+pipeExprs	R/callGraph.R	/^pipeExprs <- function(exprs, parent.env=new.env(), params=list(), priorCallGraph=NULL, processor/;"	f
+pipelineDb	R/callGraph.R	/^pipelineDb <- new.env()$/;"	g
+predecessorNames	R/callGraph.R	/^    predecessorNames <- sapply(g$edges, function(edge) edge[[1]])$/;"	v	function:maximalVertices
+predecessorNames	R/callGraph.R	/^    predecessorNames <- sapply(g$edges, function(edge) edge[[1]])$/;"	v	function:minimalVertices
+processors	R/callGraph.R	/^        processors <- mergeLists(parentPipeline$args$processors, processors)$/;"	v	function:inheritParentProcessors
+processors	R/callGraph.R	/^    processors <- list(pipe=defaultPipe(),eval=defaultEval())$/;"	v	function:defaultProcessors
+q	tests/testthat/test-pipe.R	/^q <- repipe(p, parent=envir)$/;"	g
+r	tests/testthat/test-pipe.R	/^r <- repipe(p, recalculate=c("a"), parent=envir)$/;"	g
+recalculate	tests/testthat/test-pipe.R	/^  recalculate <- c("a")$/;"	g
+rename	R/callGraph.R	/^rename <- function(x, newNames) {$/;"	f
+repipe	R/callGraph.R	/^repipe <- function(priorCallGraph, ...) {$/;"	f
+repipeParentIfModified	R/callGraph.R	/^repipeParentIfModified <- function(vertex) {$/;"	f
+reprFile	R/callGraph.R	/^                reprFile <- file.path(prefix, digest(list(x,item)))$/;"	v	functionVar:exportVertexData.exportData.anonFunc2ba87b740804
+restrict	R/callGraph.R	/^restrict <- function(g, vertices) {$/;"	f
+saveData	R/callGraph.R	/^saveData <- function(x, file) {$/;"	f
+saveVertexToCache	R/callGraph.R	/^saveVertexToCache <- function(vertex) {$/;"	f
+setDir	R/callGraph.R	/^setDir <- function(g, prefix=tempdir(), dir=NULL) {$/;"	f
+setId	R/callGraph.R	/^setId <- function(g, id=sub("\/","",tempfile("","")), overwrite=FALSE) {$/;"	f
+setParent	R/callGraph.R	/^setParent <- function(g, name="self") {$/;"	f
+setSelf	R/callGraph.R	/^setSelf <- function(g, name="self") {$/;"	f
+singletonNames	R/callGraph.R	/^    singletonNames <- Filter(function(vertexName) !(vertexName %in% unlist(g$edges)), names(g$ve/;"	v	function:maximalVertices
+singletonNames	R/callGraph.R	/^    singletonNames <- Filter(function(vertexName) !(vertexName %in% unlist(g$edges)), names(g$ve/;"	v	function:minimalVertices
+storePipeline	R/callGraph.R	/^storePipeline <- function(g) {$/;"	f
+testPreprocessor	tests/testthat/test-pipe.R	/^  testPreprocessor <- function(g) {$/;"	f
+tmpEnv	R/callGraph.R	/^        tmpEnv <- new.env()$/;"	v	function:loadData
+triggerPipelineProcessedEvent	R/callGraph.R	/^triggerPipelineProcessedEvent <- function(g) {$/;"	f
+url	R/callGraph.R	/^    url <- file.path(base_url, path)$/;"	v	function:getUrl
+urls	R/callGraph.R	/^            urls <- lapply(x, function(item) {$/;"	v	functionVar:exportVertexData.exportData
+value	R/callGraph.R	/^                  value <- eval(x, envir=envir)$/;"	v	function:buildCallGraph
+vertex	R/callGraph.R	/^              vertex <- list(expression=x, graph=callGraph, envir=envir, foreign=FALSE)$/;"	v	function:buildCallGraph
+vertex	R/callGraph.R	/^    for (vertex in g$vertices) {$/;"	v	function:clearCache
+vertices	R/callGraph.R	/^        vertices <- lapply(h$vertices, function(vertex) {$/;"	v	function:embed
+with_debug	tests/testthat/test-pipe.R	/^with_debug <- function(...) {$/;"	f
+write.dot	R/callGraph.R	/^write.dot <- function(g, path=file.path(dir,paste0(g$id,".dot")), dir=tempdir()) {$/;"	f
+x	R/callGraph.R	/^    x <- vertex$value$/;"	v	function:addUpdatePipelineVertexHandler
