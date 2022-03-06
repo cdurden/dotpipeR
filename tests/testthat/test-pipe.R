@@ -1,9 +1,9 @@
 library(withr)
 library(mockery)
 envir <- new.env()
-#f <- function() {
-#    1
-#}
+f <- function() {
+    1
+}
 with_debug <- function(...) {
     with_options(list(dotpipeR.debug=TRUE),...)
 }
